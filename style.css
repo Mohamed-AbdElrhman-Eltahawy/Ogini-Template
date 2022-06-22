@@ -1,3 +1,4 @@
+@import url(variables.css);
 html,
 body {
   margin: 0;
@@ -162,6 +163,10 @@ li {
   transition: all 0.3s;
   background-color: #222222;
   width: 100px;
+  z-index: 10;
+}
+.language_arrow {
+  font-size: 11px;
 }
 .language::after {
   position: absolute;
@@ -280,5 +285,61 @@ li {
   border-radius: 50%;
   position: absolute;
   top: 0;
+  z-index: 9;
   right: -12px;
+}
+
+/*Main menu style*/
+
+.main_menu {
+  gap: 6rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.main_menu .menu {
+  width: 22%;
+}
+
+.main_menu .slider {
+  width: 70%;
+}
+
+.main_menu .menu_button {
+  gap: 1rem;
+  display: flex;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary);
+}
+
+.main_menu .menu_button span {
+  color: #fff;
+  font-weight: bold;
+}
+
+.main_menu .main_menu_icon {
+  color: #fff;
+}
+
+.main_menu ul {
+  border: 1px solid #ebebeb;
+}
+.main_menu ul li {
+  padding: 0.5rem 3rem;
+  transition: all 0.3s;
+}
+
+.main_menu ul li:hover {
+  background-color: var(--primary);
+}
+.main_menu ul li a {
+  color: var(--secondary);
+}
+
+.main_menu ul li a:hover {
+  color: #000;
 }
