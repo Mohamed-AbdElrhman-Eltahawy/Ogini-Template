@@ -230,14 +230,15 @@ li {
   position: relative;
 }
 .hero_nav_pages ul {
-  position: absolute;
-  visibility: hidden;
   top: 43px;
+  z-index: 7;
   padding: 5px;
+  width: 150px;
+  position: absolute;
   border-radius: 5px;
+  visibility: hidden;
   transition: all 0.3s;
   background-color: #222222;
-  width: 150px;
 }
 
 .hero_nav_pages:hover ul {
@@ -342,4 +343,84 @@ li {
 
 .main_menu ul li a:hover {
   color: #000;
+}
+
+.main_menu_search {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main_menu_search_form {
+  width: 570px;
+  padding: 0.5rem;
+  position: relative;
+  border: 1px solid #ebebeb;
+}
+.main_menu_search_form span {
+  font-weight: bold;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.main_menu_search_form span::after {
+  top: 4px;
+  width: 1px;
+  content: "";
+  height: 25px;
+  opacity: 0.1;
+  right: -60px;
+  position: absolute;
+  background-color: #000;
+}
+
+.main_menu_search_form .main_menu_arrow {
+  font-size: 13px;
+  padding: 0 2rem;
+}
+
+.main_menu_search_form input {
+  color: #b2b2b2;
+  border: none;
+  font-size: 1rem;
+  font-family: cairo;
+}
+
+.main_menu_search_form input::placeholder {
+  color: #b2b2b2;
+}
+
+.main_menu_search_form button {
+  top: -1px;
+  right: 0;
+  border: none;
+  color: #fff;
+  padding: 1.1rem;
+  cursor: pointer;
+  font-weight: bold;
+  position: absolute;
+  background-color: var(--primary);
+}
+
+.main_menu_search_phone {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.search_phone_icon {
+  display: flex;
+  color: #000;
+  color: var(--primary);
+  padding: 1.1rem;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+
+.search_phone_number {
+  font-weight: bold;
+  display: block;
 }
