@@ -198,7 +198,7 @@ li {
 }
 
 .hero_logo {
-  width: 30%;
+  width: 25%;
 }
 
 .hero_navbar {
@@ -293,7 +293,7 @@ li {
 /*Main menu style*/
 
 .main_menu {
-  gap: 6rem;
+  gap: 2rem;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -338,6 +338,7 @@ li {
   background-color: var(--primary);
 }
 .main_menu ul li a {
+  display: block;
   color: var(--secondary);
 }
 
@@ -409,6 +410,10 @@ li {
   align-items: center;
 }
 
+.search_phone_wrapper {
+  text-align: right;
+}
+
 .search_phone_icon {
   display: flex;
   color: #000;
@@ -420,7 +425,50 @@ li {
   background-color: #f5f5f5;
 }
 
+.search_phone_icon .icon {
+  transform: rotate(89deg);
+}
+
 .search_phone_number {
-  font-weight: bold;
   display: block;
+  font-weight: bold;
+}
+
+.main_menu_banner {
+  height: 400px;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  background-size: cover;
+  background-position: top center;
+  background-image: url("./img/hero/banner.jpg");
+}
+
+.main_menu_banner .fruit {
+  letter-spacing: 4px;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.main_menu_banner .main_menu_details {
+  padding: 3rem 0 0 5rem;
+}
+
+.main_menu_details h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.main_menu_details .free_pickup {
+  display: block;
+  color: #6f6f6f;
+}
+
+.main_menu_details button {
+  border: none;
+  color: #fff;
+  margin-top: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  background: var(--primary);
 }
